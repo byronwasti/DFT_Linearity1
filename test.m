@@ -1,8 +1,8 @@
 function fft = somefft(n,t)
-  #R = 8000; C = 1e-7; T = 0.005;
-  R = 1; C = .1; T = 1;
+  R = 8000; C = 1e-7; T = 0.005;
+  #R = 1; C = .1; T = 1;
   fft = [];
-  for p = (0:.001:t)
+  for p = (0:.0001:t)
     Vo = 0;
     for k = (-n:n)
       if ( k == 0)
